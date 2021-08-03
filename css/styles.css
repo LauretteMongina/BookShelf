@@ -11,14 +11,7 @@ body {
     /* transition properties and type. */
 }
 
-body {
-    background: url("../images/bg2.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: black;
-    object-fit: cover;
-    background-size: cover;
-}
+
 
 .nav-logo {
     font-family: 'Satisfy', cursive;
@@ -36,6 +29,14 @@ body {
     text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
     float: center;
     font-size: 30px;
+}
+body {
+    background: url("../images/bg2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    object-fit: cover;
+    background-size: cover;
 }
 
 .intro {
