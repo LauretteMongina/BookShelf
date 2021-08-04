@@ -8,12 +8,12 @@
     <title>BookShelf</title>
     <!-- Css Links -->
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/checkout.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- font awesome link -->
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  <div class="container-fluid order" id="make-order">
+<body class="checkout">
+  <div class="container" id="make-order">
     <div class="order-overlay">
         <div class="controls-top text-center" id="Order-now">
             <h2>BookShelf</h2>
@@ -32,7 +32,7 @@
               <option value="To Kill a Mockingbird">To Kill a Mockingbird</option>
               <option value="1984">1984</option>
               <option value="Harry Potter and the Philosopher">Harry Potter and the Philosopher</option>
-              <option value="The Lord of The Rings">The Lord of The Rings</option>                  <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
+              <option value="The Lord of The Rings">The Lord of The Rings</option>
               <option value="The Great Gatsby">The Great Gatsby</option>
               <option value="Pride and Prejudice">Pride and Prejudice</option>
               <option value="The Diary of a young Girl">The Diary of a young Girl</option>
@@ -45,7 +45,7 @@
               <option value="Romeo and Juliet">Romeo and Juliet</option>
             </select>
                     <label for="select">Genre</label>
-                    <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                    <select class="browser-default custom-select custom-select-md mb-3" id="genre">
             <option selected value="0">Choose Genre</option>
             <option value="romance">Romance </option>
             <option value="history">History</option>
@@ -54,7 +54,7 @@
 
           </select>
                     <label for="definitive">Select Definitive Genre</label>
-                    <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                    <select class="browser-default custom-select custom-select-md mb-3" id="definitive">
                 <option selected value="Romance:Romeo and Juliet">Select Definitive Genre</option>
               <option value="rom">Fifyt Shades of Grey</option>
               <option value="fiction">The Lord of the Rings</option>
@@ -84,12 +84,11 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <p id="pizzatotal"></p>
+                        <p id="booktotal"></p>
                         <p id="totalbill"></p>
-                        <p id="addedprice">Delivery charges: sh. 150</p>
                         <p id="finallmessage"></p>
                     </div>
-                    <button class="btn btn-orange addPizza">Add Book!!</button>
+                    <button class="btn btn-orange addBook">Add Book!!</button>
                     <button class="btn btn-orange" id="checkout">Checkout</button>
                     <button class="btn btn-orange deliver">Home Delivery</button>
                 </div>
@@ -106,6 +105,42 @@
             </div>
         </div>
     </div>
-</div>
+    <div class="container">
+    <form class="form-checkout">
+      <!--heading-->
+      <div class="heading-checkout">
+      <p>USER <font color="">LOGIN</font></p>
+    
+      </div>
+      <!--inputs-container-->
+      <div class="input-container">
+      <!--icon-->
+      <div class="p-icon">
+      <img src="./Images/login.jpg">
+      </div>
+      <!--inputs-->
+      <div class="user-inputs">
+      <input type="email" placeholder=" Example@gmail.com">	
+      <input type="password" placeholder=" Password ">
+      </div>
+      </div>
+      <!--check box-->
+      <div class="check-box">
+      <input type="checkbox" />
+      <p>Terms & Conditions</p>
+      </div>
+      <!--button-->
+      <button class="login">LOGIN</button>
+      <!--forget password-->
+      <a href="#" class="forget">Forget passwords?</a>
+      <!--social-->
+      <ul class="social">
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+      </form>
+      </div>
 </body>
 </html>
