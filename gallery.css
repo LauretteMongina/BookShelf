@@ -22,3 +22,17 @@ body{
 .sidenav a:hover {
   color: #f1f1f1;
 }
+.main{
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.show{
+  display: none;
+}
+*{
+  color: white;
+}
+.row img{
+  height: 75%;
+  width: 95%;
+}
