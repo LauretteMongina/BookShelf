@@ -62,10 +62,23 @@ body{
 .checkout{
     background-image: url(../Images/backg.jpg);
     color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .form-checkout{
-    background-image: url(../Images/login.jpg);
-    background-repeat: no-repeat;
+    background-color: #041E2D;
+    background-size: cover;
+}
+.float-container {
+    border: 3px;
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px ;
 }
 ul{
 	list-style: none;
@@ -140,7 +153,7 @@ a{
 	border: none;
 	outline: none;
 	margin: 3px;
-	background-color: #cb1e46;
+	background-color: #032F32;
 	color: #FFFFFF;
 	padding:5px;
 	animation: animation-1 ease 7s;
@@ -196,7 +209,7 @@ color:#FFFFFF;
 font-size: 14px;
 }
 .social li a:hover{
-	background-color: #032F32;
+	background-color: #041E2D;
 	transition:linear 0.5s;
 }
 
@@ -205,7 +218,7 @@ button:active{
 }
 .input-container input:focus{
 	background-color: transparent;
-	border-bottom: 1px solid #041E2D;
+	border-bottom: 1px solid #032F32;
 	transition: all ease 0.5s;
 }
 .check-box,.login,.forget{
