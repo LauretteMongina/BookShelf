@@ -1,3 +1,4 @@
+/* gallery styles start */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 body{
   background-image: url("./Images/photo_2021-08-02_16-37-20.jpg");
@@ -55,3 +56,4 @@ body{
   -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
 }
+/* gallery ends */
