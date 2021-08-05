@@ -1,196 +1,283 @@
-
 // ======-----checkout script starts------======//
-// $("button.proceed").click(function() {
-//     $("button.proceed").hide();
-//     $("#information").hide();
-//     $("div.choice").slideDown(2000);
-// });
+var genrePrice ;
+var bookPrice = 100;
+let total = 0;
+function buyBook( name,genre,definitive,total ){
+  this.name = name;
+  this.genre = genre;
+  this.definitive = definitive;
+  this.total = total;
+}
+// submit
+$(document).ready(function(){
+  $("button.proceed").click(function(event){
+   var bookName = $(".name option:selected").val();
+   var bookGenre = $("#genre option:selected").val();
+   var definitiveGenre = $("#definitive option:selected").val();
 
-// var price, definitive_price, topping_price;
-// let total = 0;
+   switch(bookGenre){
+    case "0":
+      bookPrice = 0;
+    break;
+    case "Undeniable Attraction":
+      console.log(bookPrice)
+    break;
+    case "Wealth of Nations":
+      console.log(bookPrice)
+    break;
+    case "Fifty Shades of Grey":
+      console.log(bookPrice)
+    break;
+    case "To Kill a Mockingbird":
+      console.log(bookPrice)
+    break;
+    case "1984":
+      console.log(bookPrice)
+    break;
+    case "Harry Porter and the Philosopher ":
+      console.log(bookPrice)
+    break;
+    case "The Lord of The Rings":
+      console.log(bookPrice)
+    break;
+    case "The Great Gatsby":
+      console.log(bookPrice)
+    break;
+    case "Pride and Prejudice":
+      console.log(bookPrice)
+    break;
+    case "The Diary of a young Girl":
+      console.log(bookPrice)
+    break;
+    case "The Book Thief":
+      console.log(bookPrice)
+    break;
+    case "Lupin":
+      console.log(bookPrice)
+    break;
+    case "Little Women":
+      console.log(bookPrice)
+    break;
+    case "Farenheit 451":
+      console.log(bookPrice)
+    break;
+    case "Jane Eyre":
+      console.log(bookPrice)
+    break;
+    case "Gone with the Wind":
+      console.log(bookPrice)
+    break;
+    case "Romeo and Juliet":
+      console.log(bookPrice)
+    break;
+    default:
+      console.log("No price"); 
+  }
+   switch(bookGenre){
+      case "0":
+        genrePrice = 0;
+      break;
+      case "romance":
+        genrePrice = 200;
+      break;
+      case "history":
+        genrePrice = 500;
+      break;
+      case "fiction":
+        genrePrice = 150;
+      break;
+      case "kids":
+        genrePrice = 150;
+      break;
+      default:
+        console.log("No price"); 
+    }
+    switch(definitiveGenre){
+      case "0":
+      break;
+      case "rom":
+      break;
+      case "fiction":
+      break;
+      case "non-fiction":
+      break;
+      default:
+        console.log("No genre")
+     }
 
-// function Getbook(book, genre, definitive, total) {
-//     this.book = book;
-//     this.genre = genre;
-//     this.definitive = definitive;
-//     this.total = total;
-// }
+    if((bookName == "0") && (bookGenre == "0")){
+      console.log("nothing selected");
+      $("button.proceed").show();
+      $("div.choice").show();
+      alert("Please select book and genre"); 
+    }
+    else{
+      $("button.proceed").hide();
+      $("div.choice").slideDown(1000);
+    }
 
+    total = genrePrice + bookPrice;
+    console.log(total);
+    var checkoutTotal =0;
+    checkoutTotal = checkoutTotal + total;
 
-// proceed button
-// $(document).ready(function() {
-//     $("button.proceed").click(function() {
-//         $("button.proceed").hide();
-//         $("#information").hide();
-//         $("div.choice").slideDown(2000);
-//     });
-    // $("button.proceed").click(function(event) {
-    //     let pbook = $(".book option:selected").val();
-    //     let pgenre = $("#genre option:selected").val();
-    //     let pdefinitive = $("#definitive option:selected").val();
-    //     $.each($("input[book='toppings']:checked"), function() {
-    //         ptopping.push($(this).val());
-    //     });
-    //     console.log(ptopping.join(", "));
+    $("#bookname").html($(".name option:selected").val());
+    $("#bookgenre").html( $("#genre option:selected").val());
+    $("#bookdefinitive").html($("#definitive option:selected").val());
+    $("#totals").html(total);
+    
+// Add book backend
+    $("button.addBook").click(function(){
+      var bookName = $(".name option:selected").val();
+      var bookGenre = $("#genre option:selected").val();
+      var definitiveGenre = $("#definitive option:selected").val();
 
-    //     switch (pgenre) {
-    //         case "0":
-    //             price = 0;
-    //             break;
-    //         case "large":
-    //             price = 1200;
-    //             console.log(price);
-    //             break;
-    //         case "medium":
-    //             price = 850;
-    //             console.log("The price is " + price);
-    //             break;
-    //         case "small":
-    //             price = 600;
-    //             console.log(price);
-    //         default:
-    //             console.log("error");
-    //     }
-    //     switch (pdefinitive) {
-    //         case "0":
-    //             definitive_price = 0;
-    //             break;
-    //         case "Crispy":
-    //             definitive_price = 200;
-    //             break;
-    //         case "Stuffed":
-    //             definitive_price = 250;
-    //             break;
-    //         case "Gluten-free":
-    //             definitive_price = 180;
-    //             break;
-    //         default:
-    //             console.log("No price");
-    //     }
-//         let topping_value = ptopping.length * 50;
-//         console.log("toppins value" + topping_value);
+      switch(bookGenre){
+        case "0":
+          bookPrice = 0;
+        break;
+        case "Undeniable Attraction":
+          console.log(bookPrice)
+        break;
+        case "Wealth of Nations":
+          console.log(bookPrice)
+        break;
+        case "Fifty Shades of Grey":
+          console.log(bookPrice)
+        break;
+        case "To Kill a Mockingbird":
+          console.log(bookPrice)
+        break;
+        case "1984":
+          console.log(bookPrice)
+        break;
+        case "Harry Porter and the Philosopher ":
+          console.log(bookPrice)
+        break;
+        case "The Lord of The Rings":
+          console.log(bookPrice)
+        break;
+        case "The Great Gatsby":
+          console.log(bookPrice)
+        break;
+        case "Pride and Prejudice":
+          console.log(bookPrice)
+        break;
+        case "The Diary of a young Girl":
+          console.log(bookPrice)
+        break;
+        case "The Book Thief":
+          console.log(bookPrice)
+        break;
+        case "Lupin":
+          console.log(bookPrice)
+        break;
+        case "Little Women":
+          console.log(bookPrice)
+        break;
+        case "Farenheit 451":
+          console.log(bookPrice)
+        break;
+        case "Jane Eyre":
+          console.log(bookPrice)
+        break;
+        case "Gone with the Wind":
+          console.log(bookPrice)
+        break;
+        case "Romeo and Juliet":
+          console.log(bookPrice)
+        break;
+        default:
+          console.log("No price"); 
+      }
+      switch(bookGenre){
+        case "0":
+          genrePrice = 0;
+        break;
+        case "romance":
+          genrePrice = 200;
+        break;
+        case "history":
+          genrePrice = 500;
+        break;
+        case "fiction":
+          genrePrice = 150;
+        break;
+        case "kids":
+          genrePrice = 150;
+        break;
+        default:
+          console.log("No genre"); 
+      }
+       switch(definitiveGenre){
+        case "0":
+        break;
+        case "rom":
+        break;
+        case "fiction":
+        break;
+        case "non-fiction":
+        break;
+        default:
+          console.log("No genre")
+       }
+        checkoutTotal = checkoutTotal + total;
+        console.log(checkoutTotal);
+      var newOrder = new buyBook(bookName, bookGenre, definitiveGenre,total);
 
-//         if ((pgenre == "0") && (pdefinitive == "0")) {
-//             console.log("nothing selected");
-//             $("button.proceed").show();
-//             $("#information").show();
-//             $("div.choise").hide();
-//             alert("Please select pizza genre and definitive");
-//         } else {
-//             $("button.proceed").hide();
-//             $("#information").hide();
-//             $("div.choise").slideDown(1000);
-//         }
+      $("#ordersmade").append('<tr><td id="bookname">'+newOrder.name +'</td><td id="bookgenre">' + newOrder.genre + '</td><td id="bookdefinitive">'+newOrder.definitive +'</td><td id="totals">'+newOrder.total+'</td></tr>');
+      console.log(newOrder);
+});
+    // Checkout front-end
+    $("button#checkout").click(function(){ 
+      $("button#checkout").hide();
+      $("button.addBook").hide();
+      $("button.delivery").slideDown(1000);
+      $("#addedprice").slideDown(1000);
+      console.log("Your total bills is sh. "+checkoutTotal);
+      $("#booktotal").append("Your bill is sh. "+checkoutTotal);
+    });
+// checkout ends
+    // delivery frontend
+    $("button.deliver").click(function(){
+      $(".booktable").hide();
+      $(".delivery").slideDown(1000);
+      $("#deliveryprice").hide();
+      $("button.deliver").hide();
+      $("#booktotal").hide();
+      // backend
+      var deliveryAmount= 200;
+      console.log("You will pay sh. "+deliveryAmount+"");
+      $("#totalbill").append("Your delivery fee is: "+deliveryAmount);
+    });
 
-//         total = price + definitive_price + topping_value;
-//         console.log(total);
-//         let checkoutTotal = 0;
-//         checkoutTotal = checkoutTotal + total;
-
-//         $("#pizzabook").html($(".book option:selected").val());
-//         $("#pizzagenre").html($("#genre option:selected").val());
-//         $("#pizzadefinitive").html($("#definitive option:selected").val());
-//         $("#pizzatopping").html(ptopping.join(", "));
-//         $("#totals").html(total);
-
-//         // Add pizza button
-//         $("button.addPizza").click(function() {
-//             let pbook = $(".book option:selected").val();
-//             let pgenre = $("#genre option:selected").val();
-//             let pdefinitive = $("#definitive option:selected").val();
-//             let ptopping = [];
-//             $.each($("input[book='toppings']:checked"), function() {
-//                 ptopping.push($(this).val());
-//             });
-//             console.log(ptopping.join(", "));
-//             switch (pgenre) {
-//                 case "0":
-//                     price = 0;
-//                     break;
-//                 case "large":
-//                     price = 1200;
-//                     console.log(price);
-//                     break;
-//                 case "medium":
-//                     price = 850;
-//                     console.log("The price is " + price);
-//                     break;
-//                 case "small":
-//                     price = 600;
-//                     console.log(price);
-//                 default:
-//                     console.log("error");
-//             }
-//             switch (pdefinitive) {
-//                 case "0":
-//                     definitive_price = 0;
-//                     break;
-//                 case "Crispy":
-//                     definitive_price = 200;
-//                     break;
-//                 case "Stuffed":
-//                     definitive_price = 150;
-//                     break;
-//                 case "Gluten-free":
-//                     definitive_price = 180;
-//                     break;
-//                 default:
-//                     console.log("No price");
-//             }
-//             let topping_value = ptopping.length * 50;
-//             console.log("toppins value" + topping_value);
-//             total = price + definitive_price + topping_value;
-//             console.log(total);
-
-//             checkoutTotal = checkoutTotal + total;
-//             console.log(checkoutTotal);
-//             // constractor function
-//             var newOrder = new Getpizza(pbook, pgenre, pdefinitive, ptopping, total);
-
-//             $("#ordersmade").append('<tr><td id="pizzabook">' + newOrder.book + '</td><td id="pizzagenre">' + newOrder.genre + '</td><td id="pizzadefinitive">' + newOrder.definitive + '</td><td id="pizzatopping">' + newOrder.topping + '</td><td id="totals">' + newOrder.total + '</td></tr>');
-//             console.log(newOrder);
-
-
-
-//         });
-//         // Checkout button
-//         $("button#checkout").click(function() {
-//             $("button#checkout").hide();
-//             $("button.addPizza").hide();
-//             $("button.deliver").slideDown(1000);
-//             $("#addedprice").slideDown(1000);
-//             console.log("Your total bills is sh. " + checkoutTotal);
-//             $("#pizzatotal").append("Your bill is sh. " + checkoutTotal);
-//         });
-
-//         // home delivery button
-//         $("button.deliver").click(function() {
-//             $(".pizzatable").hide();
-//             $(".choise h2").hide();
-//             $(".delivery").slideDown(1000);
-//             $("#addedprice").hide();
-//             $("button.deliver").hide();
-//             $("#pizzatotal").hide();
-//             let deliceryamount = checkoutTotal + 150;
-//             console.log("You will pay sh. " + deliceryamount + " on delivery");
-//             $("#totalbill").append("Your bill plus delivery fee is: " + deliceryamount);
-//         });
-
-//         // when one clicks place order button
-//         $("button#final-order").click(function(event) {
-//             event.preventDefault();
-
-//             $("#pizzatotal").hide();
-//             $(".delivery").hide();
-//             $("button#final-order").hide();
-//             let deliceryamount = checkoutTotal + 150;
-//             console.log("Final Bill is: " + deliceryamount);
-//             let person = $("input#book").val();
-//             let phone = $("input#phone").val();
-//             let location = $("input#location").val();
-
-//             if ($("input#book").val() && $("input#phone").val() && $("input#location").val() != "") {
-
+    // order button front-end
+    $("button#final-order").click(function(event){
+      event.preventDefault();
+      $("#booktotal").hide();
+      $(".delivery").hide();
+      $("button#final-order").hide();
+      // backend
+      var deliveryAmount= 200;
+      console.log("Final Bill is: "+deliveryAmount);
+      var person = $("input#name").val();
+      var phone = $("input#phone").val();
+      var location = $("input#location").val();
+      var deliveryCash = checkoutTotal + deliveryAmount
+      if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
+        $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Total bill sh. "+deliveryCash);
+        $("#totalbill").hide();
+        $("#finallmessage").slideDown(1000);
+      }
+      else {
+        alert("Fill in the delivery details!");
+        $(".delivery").show();
+        $("button#final-order").show();
+      }
+    });
+   event.preventDefault();
+  });
+});
 //                 $("#finallmessage").append(person + ", We have recieved your order and it will be delivered to you at " + location + ". Prepare sh. " + deliceryamount);
 //                 $("#totalbill").hide();
 //                 $("#finallmessage").slideDown(1200);
