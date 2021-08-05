@@ -254,7 +254,6 @@ $(document).ready(function(){
     // order button front-end
     $("button#final-order").click(function(event){
       event.preventDefault();
-
       $("#booktotal").hide();
       $(".delivery").hide();
       $("button#final-order").hide();
@@ -279,4 +278,105 @@ $(document).ready(function(){
    event.preventDefault();
   });
 });
-
+//                 $("#finallmessage").append(person + ", We have recieved your order and it will be delivered to you at " + location + ". Prepare sh. " + deliceryamount);
+//                 $("#totalbill").hide();
+//                 $("#finallmessage").slideDown(1200);
+//             } else {
+//                 alert("Please fill in the details for delivery!");
+//                 $(".delivery").show();
+//                 $("button#final-order").show();
+//             }
+//         });
+//         event.preventDefault();
+//     });
+// });
+// gallery starts
+$("#book1").click(function(){
+  $('.show1').show();
+  $('#book1').hide();
+});
+$(".show1").click(function(){
+  $('#book1').show();
+  $('.show1').hide();
+});
+$("#book2").click(function(){
+  $('.show2').show();
+  $('#book2').hide();
+});
+$(".show2").click(function(){
+  $('#book2').show();
+  $('.show2').hide();
+});
+$("#book3").click(function(){
+  $('.show3').show();
+  $('#book3').hide();
+});
+$(".show3").click(function(){
+  $('#book3').show();
+  $('.show3').hide();
+});
+$("#book4").click(function(){
+  $('.show4').show();
+  $('#book4').hide();
+});
+$(".show4").click(function(){
+  $('#book4').show();
+  $('.show4').hide();
+});
+$("#book5").click(function(){
+  $('.show5').show();
+  $('#book5').hide();
+});
+$(".show5").click(function(){
+  $('#book5').show();
+  $('.show5').hide();
+});
+$("#book6").click(function(){
+  $('.show6').show();
+  $('#book6').hide();
+});
+$(".show6").click(function(){
+  $('#book6').show();
+  $('.show6').hide();
+});
+$("#book7").click(function(){
+  $('.show7').show();
+  $('#book7').hide();
+});
+$(".show7").click(function(){
+  $('#book7').show();
+  $('.show7').hide();
+});
+$("#book8").click(function(){
+  $('.show8').show();
+  $('#book8').hide();
+});
+$(".show8").click(function(){
+  $('#book8').show();
+  $('.show8').hide();
+});
+$("#book9").click(function(){
+  $('.show9').show();
+  $('#book9').hide();
+});
+$(".show9").click(function(){
+  $('#book9').show();
+  $('.show9').hide();
+});
+$("#book10").click(function(){
+  $('.show10').show();
+  $('#book10').hide();
+});
+$(".show10").click(function(){
+  $('#book10').show();
+  $('.show10').hide();
+});
+$("#book11").click(function(){
+  $('.show11').show();
+  $('#book11').hide();
+});
+$(".show11").click(function(){
+  $('#book11').show();
+  $('.show11').hide();
+});
+// gallery ends
