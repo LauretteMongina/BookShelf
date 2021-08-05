@@ -380,12 +380,6 @@ $(".show11").click(function(){
   $('.show11').hide();
 });
 // gallery ends
-$(document).ready(function() {
-  $('#sidebarCollapse').on('click', function() {
-      $('#sidebar').toggleClass('active');
-      $(this).toggleClass('active');
-  });
-});
 ! function(a) {
   function b() {
       g.hasClass(k) ? h.toggleClass(l) : h.toggleClass(m), q && g.one("transitionend", function() {
