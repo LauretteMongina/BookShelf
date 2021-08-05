@@ -1,3 +1,4 @@
+
 /* gallery styles start */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 body{
@@ -576,7 +577,6 @@ button:active{
     transform: translateY(-13px) rotate(-45deg);
 }
 /*---landingpageends---*/
-
 /*---about page starts---*/
 .about {
     background-color: #0D0C0C;
@@ -638,5 +638,3 @@ button:active{
     margin-top: 50px;
 }
 /*---about page ends---*/
-
-
