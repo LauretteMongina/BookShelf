@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Images/icon.ico">
+    <title>BookShelf</title>
+    <!-- Css Links -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <!-- js links link -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</head>
+</head>
+<body class="checkout">
+  <div class="float-container">
+    <h1 class="text-center"> <a href="./index.html" style="color: white;">BookShelf</a></h1>
+             <div class="float-child">
+        <div id="make-order">
+    <div class="order-overlay">
+        <div class="controls-top text-center" id="Order-now">
+        </div>
+        <h2>For the mind that never rests with books in check</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <form action="">
+                    <label for="select">The Book you desire</label>
+                    <select class="browser-default custom-select custom-select-md mb-3 name">
+              <!-- <option selected value="choose">Choose your flavor</option> -->
+              <option selected value="0">Choose a Book </option>
+              <option value="Undeniable Attraction">Undeniable Attraction</option>
+              <option value="Wealth of Nations">Wealth of Nations</option>
+              <option value="Fifty Shades of Grey">Fifty Shades of Grey</option>
+              <option value="To Kill a Mockingbird">To Kill a Mockingbird</option>
+              <option value="1984">1984</option>
+              <option value="Harry Potter and the Philosopher">Harry Potter and the Philosopher</option>
+              <option value="The Lord of The Rings">The Lord of The Rings</option>
+              <option value="The Great Gatsby">The Great Gatsby</option>
+              <option value="Pride and Prejudice">Pride and Prejudice</option>
+              <option value="The Diary of a young Girl">The Diary of a young Girl</option>
+              <option value="The Book Thief">The Book Thief</option>
+              <option value="Lupin">Lupin</option>
+              <option value="Little Women">Little Women</option>
+              <option value="Fahrenheit 451">Fahrenheit 451</option>
+              <option value="Jane Eyre">Jane Eyre</option>
+              <option value="Gone with the Wind">Gone with the Wind</option>
+              <option value="Romeo and Juliet">Romeo and Juliet</option>
+            </select>
+                    <label for="select">Genre</label>
+                    <select class="browser-default custom-select custom-select-md mb-3" id="genre">
+            <option selected value="0">Choose Genre</option>
+            <option value="romance">Romance </option>
+            <option value="history">History</option>
+            <option value="fiction">Fantasy</option>
+            <option value="kids">Kids</option>
+
+          </select>
+                    <label for="definitive">Select Definitive Genre</label>
+                    <select class="browser-default custom-select custom-select-md mb-3" id="definitive">
+                <option selected value="Romance:Romeo and Juliet">Select Definitive Genre</option>
+              <option value="rom">Fifyt Shades of Grey</option>
+              <option value="fiction">The Lord of the Rings</option>
+              <option value="non-fiction">1984</option>
+            </select>
+                    <button type="submit" class="btn btn-orange proceed">Proceed</button>
+                </form>
+            </div>
+                <div class="choice">
+                    <h2>Your Order is:</h2>
+                    <div id="your-orders">
+                        <table class="table table-sm  booktable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">book</th>
+                                    <th scope="col">genre</th>
+                                    <th scope="col">definitive</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ordersmade">
+                                <tr>
+                                    <td id="bookname"></td>
+                                    <td id="bookgenre"></td>
+                                    <td id="bookdefinitive"></td>
+                                    <td id="totals"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p id="booktotal"></p>
+                        <p id="totalbill"></p>
+                        <p id="deliveryprice" style="color: white;" >Delivery will cost sh. 200</p>
+                        <p id="finallmessage"></p>
+                    </div>
+                    <button class="btn btn-orange addBook">Add Book!!</button>
+                    <button class="btn btn-orange" id="checkout">Checkout</button>
+                    <button class="btn btn-orange deliver">Home Delivery</button>
+                </div>
+                <div class="delivery">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                            <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                            <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                            <button class="btn btn-orange" id="final-order">Place Order</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="float-child">
+    <form class="form-checkout">
+      <!--heading-->
+      <div class="heading-checkout">
+      <p>USER <font color="">LOGIN</font></p>
+    
+      </div>
+      <!--inputs-container-->
+      <div class="input-container">
+      <!--icon-->
+      <div class="p-icon">
+      <img src="./Images/login.jpg">
+      </div>
+      <!--inputs-->
+      <div class="user-inputs">
+      <input type="email" placeholder=" Example@gmail.com">	
+      <input type="password" placeholder=" Password ">
+      </div>
+      </div>
+      <!--check box-->
+      <div class="check-box">
+      <input type="checkbox" />
+      <p>Terms & Conditions</p>
+      </div>
+      <!--button-->
+      <button class="login">LOGIN</button>
+      <!--forget password-->
+      <a href="#" class="forget">Forget passwords?</a>
+      <!--social-->
+      <ul class="social">
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+      </form>
+      </div>
+    </div>
+
+</body>
+</html>
