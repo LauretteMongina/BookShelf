@@ -203,6 +203,7 @@
 //         event.preventDefault();
 //     });
 // });
+// gallery starts
 $("#book1").click(function(){
   $('.show1').show();
   $('#book1').hide();
@@ -291,3 +292,4 @@ $(".show11").click(function(){
   $('#book11').show();
   $('.show11').hide();
 });
+// gallery ends
