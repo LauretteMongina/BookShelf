@@ -1,0 +1,347 @@
+.body1 {
+    background: url("../images/background.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: 0.7s ease-in;
+    transition: 0.4s ease-in;
+     padding: 0;
+    margin: 0;
+    margin-top: -50px;
+    /* transition properties and type. */
+}
+
+
+
+.nav-logo {
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    color: black;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+    float: right;
+    font-size: 20px;
+}
+
+.nav-logo1 {
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    color: white;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+    float: center;
+    font-size: 30px;
+}
+.body1 {
+    background: url("../images/bg2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    object-fit: cover;
+    background-size: cover;
+     padding: 0;
+    margin-top: -17px;
+    margin-bottom: -12px;
+}
+
+.intro {
+    width: 50%;
+    margin-left: 20%;
+    margin-right: 50%;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 90px;
+    text-decoration-line: underline;
+    text-decoration-line: underline;
+    text-decoration-line: underline;
+    padding-top: 0.2em;
+    padding-bottom: 0;
+}
+
+.quote {
+    font-family: 'Satisfy', cursive;
+    text-align: right;
+    font-size: 30px;
+    margin-left: 10%;
+    margin-right: 20%;
+    padding-bottom: 5%;
+    padding-top: 0px;
+}
+
+.footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Menu Appearance */
+
+.pushy {
+    font-family: 'Satisfy', cursive;
+    position: fixed;
+    font-size: 30px;
+    width: 300px;
+    height: 100%;
+    top: 0;
+    z-index: 9999;
+    background-color: black;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    /* enables momentum scrolling in iOS overflow elements */
+}
+
+.pushy a {
+    display: block;
+    color: #b3b3b1;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+.pushy a:hover {
+    color: #FFF;
+}
+
+.pushy ul:first-child {
+    margin-top: 10px;
+}
+
+.pushy.pushy-left {
+    left: 0;
+}
+
+.pushy.pushy-right {
+    right: 0;
+}
+
+.pushy-content {
+    visibility: hidden;
+}
+
+
+/* Menu Movement */
+
+.pushy-left {
+    transform: translate3d(-300px, 0, 0);
+}
+
+.pushy-open-left #container,
+.pushy-open-left .push {
+    transform: translate3d(300px, 0, 0);
+}
+
+.pushy-right {
+    transform: translate3d(300px, 0, 0);
+}
+
+
+/*.pushy-open-right #container,*/
+
+.pushy-open-right .push {
+    transform: translate3d(-300px, 0, 0);
+}
+
+.pushy-open-left .pushy,
+.pushy-open-right .pushy {
+    transform: translate3d(0, 0, 0);
+}
+
+.pushy-open-left .pushy-content,
+.pushy-open-right .pushy-content {
+    visibility: visible;
+}
+
+
+/* Menu Transitions */
+
+#container,
+.pushy,
+.push {
+    transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+.pushy-content {
+    transition: visibility 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+
+/* Site Overlay */
+
+.site-overlay {
+    display: none;
+}
+
+.pushy-open-left .site-overlay,
+.pushy-open-right .site-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fade 500ms;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Submenu Appearance */
+
+.pushy-submenu{
+    /* Submenu Buttons */
+    /* Submenu Icon */
+}
+
+.pushy-submenu ul {
+    padding-left: 15px;
+    transition: max-height 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.pushy-submenu ul .pushy-link {
+    transition: opacity 0.2s ease-in-out;
+}
+
+.pushy-submenu button {
+    width: 100%;
+    color: white;
+    padding: 15px 30px;
+    text-align: left;
+    background: transparent;
+    border: 0;
+}
+
+.pushy-submenu button:hover {
+    color: #FFF;
+}
+
+.pushy-submenu>a,
+.pushy-submenu>button {
+    position: relative;
+}
+
+.pushy-submenu>a::after,
+.pushy-submenu>button::after {
+    content: '';
+    display: block;
+    height: 11px;
+    width: 8px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    transition: transform 0.2s;
+}
+
+
+/* Submenu Movement */
+
+.pushy-submenu-closed ul {
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.pushy-submenu-closed .pushy-link {
+    opacity: 0;
+}
+
+.pushy-submenu-open ul {
+    max-height: 1000px;
+    visibility: visible;
+}
+
+.pushy-submenu-open .pushy-link {
+    opacity: 0.8;
+}
+
+.pushy-submenu-open a::after,
+.pushy-submenu-open button::after {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+
+/* Menu Button */
+
+.menu-btn-wrapper {
+    position: relative;
+    z-index: 10000000
+}
+
+.menu-btn {
+    padding: 10px;
+    background-image: url("/images/background.jpg");
+    text-align: center;
+    cursor: pointer;
+    border: 0px;
+    z-index: 100000;
+    position: relative
+}
+
+.hamburger .line1 {
+    width: 50px;
+    height: 5px;
+    background-color: #410B0B;
+    ;
+    display: block;
+    margin: 8px auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburger .line {
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    display: block;
+    margin: 8px auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger .menu {
+    float: left;
+}
+
+.pushy-open-right #hamburger .line:nth-child(2) {
+    opacity: 0.7;
+}
+
+.pushy-open-right #hamburger .line1:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+}
+
+.pushy-open-right #hamburger .line:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+.pushy-open-right .site-overlay .line:nth-child(2) {
+    opacity: 0;
+}
+
+.pushy-open-right .site-overlay .line:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+}
+
+.pushy-open-right .site-overlay .line:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+}
