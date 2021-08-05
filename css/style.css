@@ -577,3 +577,64 @@ button:active{
     transform: translateY(-13px) rotate(-45deg);
 }
 /*---landingpageends---*/
+/*---about page starts---*/
+.about {
+    background-color: #0D0C0C;
+    background-size: cover;
+}
+
+.bookshelf {
+    position: absolute;
+    width: 178px;
+    height: 69px;
+    top: 20px;
+    left: 1165px;
+    font-family: 'Satisfy';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 69px;
+}
+
+.about-nav {
+    cursor: pointer;
+}
+
+.rectangle {
+    display: block;
+    width: 40px;
+    padding-top: 25px;
+    margin-left: 15px;
+}
+
+.rectangle2 {
+    display: block;
+    margin-top: 5px;
+    width: 40px;
+    margin-left: 15px;
+}
+
+.about-heading {
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 0px;
+    text-align: center;
+}
+
+.about-paragraph {
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    margin: 0px;
+}
+
+.row {
+    justify-content: space-around;
+    display: flex;
+    margin-top: 50px;
+}
+/*---about page ends---*/
