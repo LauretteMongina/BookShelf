@@ -10,14 +10,15 @@
 ##  Project Description
 ### Bookshelf is a website where you can browse through various books, see our featured books of the month and if interested in a book, you can order it or borrow it for a period of time.
 ### >Also, user can create an account to be a member of the bookshelf team.
-<img src="../Images/1.png">
-<img src="../Images/2.png">
-<img src="../Images/3.png">
-<img src="../Images/4.png">
-<img src="../Images/5.png">
-<img src="../Images/6.png">
-<img src="../Images/7.png">
-<img src="../Images/8.png">
+<img src="./Images/1.png">
+<img src="./Images/2.png">
+<img src="./Images/3.png">
+<img src="./Images/4.png">
+<img src="./Images/5.png">
+<img src="./Images/6.png">
+<img src="./Images/7.png">
+<img src="./Images/8.png">
+
 ## Setup Instructions and Installation
 - Clone the repository to a directory in you computer. Link to repo https://laurettemongina.github.io/BookShelf/
 - Git init, git clone https://laurettemongina.github.io/BookShelf/
