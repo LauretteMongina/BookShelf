@@ -9,16 +9,22 @@
     <!-- Css Links -->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <!-- font awesome link -->
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <!-- js links link -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</head>
 </head>
 <body class="checkout">
   <div class="float-container">
-    <div class="float-child">
+    <h1 class="text-center">BookShelf</h1>
+             <div class="float-child">
         <div id="make-order">
     <div class="order-overlay">
         <div class="controls-top text-center" id="Order-now">
-            <h2>BookShelf</h2>
         </div>
         <h2>For the mind that never rests with books in check</h2>
         <div class="row">
@@ -68,7 +74,7 @@
                 <div class="choice">
                     <h2>Your Order is:</h2>
                     <div id="your-orders">
-                        <table class="table table-sm  pizzatable">
+                        <table class="table table-sm  booktable">
                             <thead>
                                 <tr>
                                     <th scope="col">book</th>
@@ -88,6 +94,7 @@
                         </table>
                         <p id="booktotal"></p>
                         <p id="totalbill"></p>
+                        <p id="deliveryprice" style="color: white;" >Delivery will cost sh. 200</p>
                         <p id="finallmessage"></p>
                     </div>
                     <button class="btn btn-orange addBook">Add Book!!</button>
@@ -108,8 +115,7 @@
         </div>
     </div>
     </div>
-    <div class="float-child">
-    <div class="container">
+<div class="float-child">
     <form class="form-checkout">
       <!--heading-->
       <div class="heading-checkout">
@@ -146,7 +152,7 @@
       </ul>
       </form>
       </div>
-      </div>
     </div>
+
 </body>
 </html>
