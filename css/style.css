@@ -535,7 +535,7 @@ button:active{
 
 .menu-btn {
     padding: 10px;
-    background-image: url("/images/background.jpg");
+    background-image: url("/Images/background.jpg");
     text-align: center;
     cursor: pointer;
     border: 0px;
