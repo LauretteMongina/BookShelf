@@ -1,7 +1,7 @@
 /* gallery styles start */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 body{
-  background-image: url("../Images/photo_2021-08-02_16-37-20.jpg");
+  background-image: url("./Images/photo_2021-08-02_16-37-20.jpg");
   font-family:'Nunito', sans-serif;
 }
 .sidenav {
@@ -28,14 +28,14 @@ body{
   margin-left: 20%;
   margin-top: 5%;
 }
-.show1,.show2,.show3,.show4,.show5,.show6,.show7,.show8,.show9,.show10{
+.show{
   display: none;
 }
 *gallery{
   color: white;
 }
 .row img{
-  height: 75% !important;
+  height: 75%;
   width: 95%;
 }
 .col-md-3{
@@ -59,10 +59,27 @@ body{
 /* gallery ends */
 
 /* -------=====Checkout Starts=======-------- */
+.text-center{
+    font-family: Satisfy;
+    font-size: 32px;
+}
+.choice{
+  display: none;
+  color: #ffffff;
+}
+.btn{
+  background-color: #ffffff;
+}
+th,td{
+  color: #ffffff;
+}
+.delivery{
+  display: none;
+}
 .checkout{
     background-image: url(../Images/background.jpg);
     color: #ffffff;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 .form-checkout{
@@ -86,9 +103,6 @@ ul{
 a{
 	text-decoration:none;
 }
-/* *{
-	box-sizing: border-box;
-} */
 .heading-checkout{
 	text-align: center;
 	font-family: myriad pro;
@@ -209,7 +223,7 @@ color:#FFFFFF;
 font-size: 14px;
 }
 .social li a:hover{
-	background-color: #041E2D;
+	background-color: #032F32;
 	transition:linear 0.5s;
 }
 
