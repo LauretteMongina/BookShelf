@@ -1,9 +1,9 @@
 
 /* gallery styles start */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
-body{
-  background-image: url("./Images/photo_2021-08-02_16-37-20.jpg");
-  font-family:'Nunito', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+.gallery{
+  background-image: url("../Images/background.jpg");
+  font-family:Satisfy
 }
 .sidenav {
   height: 100%;
@@ -29,7 +29,7 @@ body{
   margin-left: 20%;
   margin-top: 5%;
 }
-.show{
+.show1,.show2,.show3,.show4,.show5,.show6,.show7,.show8,.show9,.show10{
   display: none;
 }
 h2{
@@ -243,8 +243,8 @@ button:active{
 
 /* -------=====Checkout ends=======-------- */
 /*----landing page begins----*/
-.body1 {
-    background: url("../images/background.jpg");
+.landing {
+    background: url("../Images/background.jpg");
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -254,7 +254,7 @@ button:active{
     -webkit-transition: 0.7s ease-in;
     transition: 0.4s ease-in;
      padding: 0;
-    margin: 0;
+    margin-bottom: 0;
     margin-top: -50px;
     /* transition properties and type. */
 }
@@ -278,8 +278,8 @@ button:active{
     float: center;
     font-size: 30px;
 }
-.body1 {
-    background: url("../images/bg2.webp");
+/* .body1 {
+    background: url("/Images/");
     background-repeat: no-repeat;
     background-size: cover;
     color: black;
@@ -288,7 +288,7 @@ button:active{
      padding: 0;
     margin-top: -17px;
     margin-bottom: -12px;
-}
+} */
 
 .intro {
     width: 50%;
@@ -296,22 +296,24 @@ button:active{
     margin-right: 50%;
     text-align: center;
     font-family: 'Satisfy', cursive;
-    font-size: 90px;
+    font-size: 80px;
     text-decoration-line: underline;
     text-decoration-line: underline;
     text-decoration-line: underline;
-    padding-top: 0.2em;
+    padding-top: 0;
     padding-bottom: 0;
+		margin-top: -6%;
 }
 
 .quote {
     font-family: 'Satisfy', cursive;
     text-align: right;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 10%;
     margin-right: 20%;
-    padding-bottom: 5%;
-    padding-top: 0px;
+    /* padding-bottom: 5%; */
+    padding-top: 0;
+		margin-top: 0;
 }
 
 .footer {
@@ -595,6 +597,7 @@ button:active{
 .about {
     background-color: #0D0C0C;
     background-size: cover;
+		overflow-x: hidden;
 }
 
 .bookshelf {
@@ -602,7 +605,7 @@ button:active{
     width: 178px;
     height: 69px;
     top: 20px;
-    left: 1165px;
+    left: 1105px;
     font-family: 'Satisfy';
     font-style: normal;
     font-weight: normal;
