@@ -60,9 +60,9 @@ body{
 
 /* -------=====Checkout Starts=======-------- */
 .checkout{
-    background-image: url(../Images/backg.jpg);
+    background-image: url(../Images/background.jpg);
     color: #ffffff;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 .form-checkout{
